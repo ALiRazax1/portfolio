@@ -14,7 +14,6 @@ export default function home() {
           <span className="text-blue-500 pl-3"> Front End </span>{" "}
           <span>Developer</span>
         </div>
-        
       </section>
 
       <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-16 py-32">
@@ -56,7 +55,7 @@ export default function home() {
             </button>
           </Link>
         </div>
-       
+
         <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
           <h1 className="mb-5 text-blue-500 text-2xl font-medium">
             React and TypeScript: How to Build Strongly-Typed Components{" "}
