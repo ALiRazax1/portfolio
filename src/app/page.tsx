@@ -26,7 +26,7 @@ export default function home() {
 "
           >
             This blog will explore the key differences between TypeScript and
-            JavaScript, focusing on the benefits of TypeScript's static typing,
+            JavaScript, focusing on the benefits of TypeScript&apos;s static typing,
             improved tooling, and error detection.It will also discuss why
             developers are adopting TypeScript for large-scale projects.
           </p>
@@ -45,7 +45,7 @@ export default function home() {
 "
           >
             In this post, we will cover how Next.js enhances React by providing
-            server-side rendering, static site generation, and API routes. We'll
+            server-side rendering, static site generation, and API routes. We&apos;ll
             guide readers through building a scalable web application by using
             Next.js features to optimize performance
           </p>
@@ -85,7 +85,7 @@ export default function home() {
           >
             Performance is critical for modern web applications. This post will
             provide practical tips for optimizing Next.js applications, such as
-            lazy loading, image optimization, and leveraging Next.js's built-in
+            lazy loading, image optimization, and leveraging Next.js&apos;s built-in
             tools to improve site speed and user experience.
           </p>
           <Link href={""}>
@@ -96,7 +96,7 @@ export default function home() {
         </div>
         <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
           <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            From JavaScript to TypeScript: A Beginner's Guide to Type Safety{" "}
+            From JavaScript to TypeScript: A Beginner&apos;s Guide to Type Safety{" "}
           </h1>
           <p
             className="pb-3
