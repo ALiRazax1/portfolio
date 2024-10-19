@@ -1,139 +1,119 @@
 import Header from "./components/header";
 import Link from "next/link";
 import Footer from "./components/footer";
+import Image from "next/image";
+
+
 export default function home() {
   return (
     <div className="text-white bg-black">
       <Header />
-
-      <section className="flex justify-center container mx-auto">
-        <div className="bg-black text-[40px] md:text-[48px] font-bold pt-10 fade-in-text">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-10 pt-10  container mx-auto">
+        <div className="bg-black text-[40px] md:text-[48px] font-bold mt-20  fade-in-text ">
           <span>Hi,</span> <span>I</span> <span>am</span>{" "}
           <span className="text-blue-500 ">Ali Raza</span> <br />{" "}
-          <span>The </span>
-          <span className="text-blue-500 pl-3"> Front End </span>{" "}
+          <span>The </span>{" "}
+          <span className="text-blue-500"> Front End </span>{" "}
           <span>Developer</span>
         </div>
+        <div><Image className="rounded-[50%] mx-auto" src={"/images/hero-img.png"} alt="coding image" width={500} height={500}/></div>
       </section>
 
-      <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-16 py-32">
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            TypeScript vs. JavaScript: Key Differences
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            This blog will explore the key differences between TypeScript and
-            JavaScript, focusing on the benefits of TypeScript&apos;s static typing,
-            improved tooling, and error detection.It will also discuss why
-            developers are adopting TypeScript for large-scale projects.
-          </p>
-          <Link href={"./js-vs-ts"}>
-            <button className="bg-blue-600 w-36 h-12 xl:mt-5 md:mt-[50px] rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+      <section className="container bg-neutral-950 shadow-2xl shadow-blue-500 rounded-md mt-20 py-36 md:py-44  xl:py-24 mx-auto">
+  <h1 className="text-[64px] font-bold text-blue-500 text-center mb-16">Blogs</h1>
+      <div className="scene  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 sm:px-4 md:px-4 xl:px-8 gap-y-32 md:gap-y-44 xl:gap-y-24  gap-x-3">
+       
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face w-full card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/js-vs-ts.jpeg"} alt="asd" width={300} height={300}/>
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={"./js-vs-ts"}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            Building Scalable Web Applications with Next.js and React
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            In this post, we will cover how Next.js enhances React by providing
-            server-side rendering, static site generation, and API routes. We&apos;ll
-            guide readers through building a scalable web application by using
-            Next.js features to optimize performance
-          </p>
-          <Link href={"./web-app-with-nextjs-and-react"}>
-            <button className="bg-blue-600 w-36 h-12 rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face  w-full  card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/build-app-with-nextjs.jpg"} alt="asd"width={300} height={300} />
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={"./web-app-with-nextjs-and-react"}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
-
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            React and TypeScript: How to Build Strongly-Typed Components{" "}
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            This blog will focus on using TypeScript in a React environment,
-            explaining how to create strongly-typed components, manage props,
-            and handle state. Readers will learn how TypeScript can improve code
-            readability, maintainability, and help catch bugs early.
-          </p>
-          <Link href={""}>
-            <button className="bg-blue-600 w-36 h-12 rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face  w-full  card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/react-and-ts.jpeg"} alt="asd" width={300} height={300} />
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={"./react-and-ts"}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            Next.js Performance Optimization Tips for Lightning-Fast Websites{" "}
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            Performance is critical for modern web applications. This post will
-            provide practical tips for optimizing Next.js applications, such as
-            lazy loading, image optimization, and leveraging Next.js&apos;s built-in
-            tools to improve site speed and user experience.
-          </p>
-          <Link href={""}>
-            <button className="bg-blue-600 w-36 h-12 xl:mt-10 rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face  w-full  card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/nextjs-optimizing-tips.png"} alt="asd" width={300} height={300} />
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={""}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            From JavaScript to TypeScript: A Beginner&apos;s Guide to Type Safety{" "}
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            This beginner-friendly guide will walk readers through the
-            transition from JavaScript to TypeScript, highlighting the key
-            concepts of type safety. It will provide step-by-step examples to
-            demonstrate how TypeScript helps developers catch potential errors
-            at compile-time and improve overall code reliability.
-          </p>
-          <Link href={""}>
-            <button className="bg-blue-600 w-36 h-12 rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face  w-full  card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/js-to-ts.jpg"} alt="asd" width={300} height={300}/>
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={""}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
-        <div className="fade-in mx-3 border-transparent hover:border-blue-600 hover:duration-500 bg-slate-200 text-black border-[3px] rounded-md px-3 card">
-          <h1 className="mb-5 text-blue-500 text-2xl font-medium">
-            Top 10 Best Practices for Writing Clean JavaScript Code{" "}
-          </h1>
-          <p
-            className="pb-3
-"
-          >
-            Writing clean, maintainable, and efficient code is critical for any
-            JavaScript developer. This blog will outline ten essential best
-            practices, including proper variable naming and avoiding common
-            pitfalls, to help developers improve the quality of their JavaScript
-            code.
-          </p>
-          <Link href={"./best-practice-for-js"}>
-            <button className="bg-blue-600 w-36 h-12 rounded-3xl text-white my-5 hover:bg-black hover:text-white duration-500">
-              Read More
-            </button>
-          </Link>
+        <div className="card text-white w-[100%] md:[80%] xl:w-[100%] mx-auto">
+          <div className="card__face  w-full  card__face--front">
+            <Image className="h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] w-[100%] rounded-sm" src={"/images/best-practice-of-writing js-code.jpg"} alt="asd" width={300} height={300} />
+          </div>
+          <div className="text-left p-5 bg-black shadow-md  shadow-white rounded-sm card__face w-full h-[280px] sm:h-[300px] md:h-[350px] xl:h-[260px] card__face--back">
+            <h2>Blog Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              autem suscipit laboriosam nesciunt reprehenderit voluptatum
+              laudantium fugiat deleniti aliquam amet deserunt quisquam odit
+              facilis earum, iure, non minus? Vero, exercitationem?
+            </p><Link href={"./best-practice-for-js"}>
+            <button className="bg-blue-500 w-full md:w-40 h-12 mt-2 rounded-full border-2 border-transparent hover:text-blue-400 font-semibold  hover:bg-black hover:border-white duration-500">Read More</button>
+            </Link></div>
         </div>
+      </div>
       </section>
       <Footer />
     </div>
